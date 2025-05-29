@@ -70,3 +70,14 @@ Les relations sont modélisées via des clés étrangères (ex : un joueur appar
 1. Importer la base de données :
    ```bash
    mysql -u root -p < database.sql
+   
+2. Copier les fichiers dans /var/www/html :
+   ```bash
+   sudo cp *.php /var/www/html/
+
+3. Accéder au projet dans le navigateur :
+   http://localhost
+ou http://[adresse IP Linux Crostini]
+
+Auteur
+Solaris-bit
