@@ -1,5 +1,8 @@
 # 🎯 Projet Web : Application de Gestion Sportive (2-Tier Architecture)
-
+![PHP](https://img.shields.io/badge/php-8.2-blue?logo=php)
+![MariaDB](https://img.shields.io/badge/mariadb-10.11-lightblue?logo=mariadb)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-complete-success)
 ## 🧾 Description
 Ce projet consiste à développer une application web simple de gestion de compétitions sportives, basée sur une architecture à deux niveaux (2-tier) :  
 - **Frontend / logique métier** en PHP  
@@ -79,5 +82,23 @@ Les relations sont modélisées via des clés étrangères (ex : un joueur appar
    http://localhost
 ou http://[adresse IP Linux Crostini]
 
-Auteur
+## Database Setup (phpMyAdmin or CLI)
+1. Option A: Importer via phpMyAdmin
+- Aller à http://localhost/phpmyadmin
+- Se connecter avec ses crédits MySQL/MariaDB
+- Créer un nouveau database: sports_management
+- Cliquer Import → Select database.sql → Click Go
+
+2. Option B: Importer via Terminal
+   ```bash
+   mysql -u root -p
+   CREATE DATABASE sports_management;
+   USE sports_management;
+   SOURCE database.sql;
+
+
+## 🖼️ Entity Relationship Diagram
+The full database model is included as a visual MCD:
+
+## Auteur
 Solaris-bit
